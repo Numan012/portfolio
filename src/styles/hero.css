@@ -1,0 +1,138 @@
+.hero-img {
+  margin-top: 1rem;
+  width: 13.5rem;
+  border-radius: 1rem;
+  object-fit: contain;
+  margin-top: 5rem;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+.hero h1 {
+  text-align: center;
+  width: 60%;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.hero h1 span {
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero p {
+  width: 60%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.hero-action {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-6.2rem);
+  }
+  /* 80% {
+      transform: translateX(10px);
+    } */
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.hero-connect {
+  padding: 1.5rem 2.5rem;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.hero-connect:hover {
+  transform: scale(1.06);
+}
+
+.hero-resume {
+  padding: 1.5rem 2.5rem;
+  border: 2px solid white;
+  border-radius: 50px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.hero-resume:hover {
+  border: 2px solid #b923e1;
+  transform: scale(1.06);
+}
+
+@media screen and (max-width: 768px) {
+  .hero-img {
+    width: 9rem;
+    margin-top: 3rem;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    width: 80%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .hero-action {
+    gap: 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hero-img {
+    width: 9rem;
+    margin-top: 3rem;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    width: 80%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .hero-action {
+    gap: 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .hero-action {
+    display: flex;
+    flex-direction: column;
+  }
+  .anchor-link {
+    font-size: 1rem;
+  }
+}

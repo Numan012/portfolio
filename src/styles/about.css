@@ -1,0 +1,162 @@
+
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  margin: 5rem 10rem;
+}
+
+.about-left img {
+  width: 20rem;
+  border-radius: 1rem;
+}
+
+.about-sections {
+  display: flex;
+  gap: 2rem;
+}
+
+.about-para {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-para p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.about-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about-skill {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.about-skill p {
+  min-width: 8rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.about-skill hr {
+  outline: none;
+  border: none;
+  height: 0.5rem;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+}
+
+.about-skill:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.about-achievments {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+.about-achievment h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  background: linear-gradient(5deg, #da7c25 0.36%, #b923e1 102.06%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: 0.5s;
+}
+
+.about-achievment p {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    gap: 4rem;
+    margin: 5rem 2rem;
+    align-items: center;
+  }
+  .about-sections {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-sections p {
+    font-size: 1rem;
+  }
+  .about-sections img {
+    width: 18rem;
+  }
+  .about-skill {
+    gap: 1.2rem;
+    line-height: 2rem;
+    align-items: center;
+  }
+  .about-achievments {
+    justify-content: space-between;
+  }
+  .about-achievments {
+    gap: 1rem;
+  }
+  .about-achievments h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #html {
+    width: 100%;
+  }
+  #js {
+    width: 90%;
+  }
+  #react {
+    width: 97%;
+  }
+  #next {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1113px) {
+  #html {
+    width: 100%;
+  }
+  #js {
+    width: 90%;
+  }
+  #react {
+    width: 97%;
+  }
+  #next {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .about-achievments {
+    justify-content: space-between;
+  }
+  .about-achievments {
+    gap: 1.2rem;
+  }
+  .about-achievments h1 {
+    font-size: 1.6rem;
+  }
+  .about-achievments p {
+    font-size: 10px;
+    text-align: center;
+  }
+}
